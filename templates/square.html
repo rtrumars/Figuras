@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+<meta name="viewport" content="width=device-width,initial-scale-1">
+<link rel="stylesheet"href="{{ url_for('static',filename='css/main.css') }}"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>aste</title>
+</head>
+<body class="bg-success">
+<canvas id="myCanvas" width="200" height="150" style="border:5px solid black;">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(20, 20, 150, 100);
+ctx.stroke();
+ctx.fillStyle = "orange";
+ctx.fill();
+</script> 
+  <header>
+  <div>
+    <a class="btn btn-info" role="button" href="{{ url_for('main') }}">Atpakaļ</a>
+  </div>
+</header>
+
+</body>
+</html>
